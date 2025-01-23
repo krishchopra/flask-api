@@ -18,8 +18,8 @@ class UserModel(db.Model):
 
 
 user_args = reqparse.RequestParser()
-user_args.add_argument("name", type=str, required=True, help="Name cannot be blank")
-user_args.add_argument("email", type=str, required=True, help="Email cannot be blank")
+user_args.add_argument("name", type=str, required=True, help="Name cannot be blank!")
+user_args.add_argument("email", type=str, required=True, help="Email cannot be blank!")
 
 userFields = {
     "id": fields.Integer,
